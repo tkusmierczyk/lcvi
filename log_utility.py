@@ -42,18 +42,20 @@ EPS_TAYLOR2 = 1e-8
 
 
 class UtilityAggregatorFactory:
-    """ Constructs methods that take a matrix of utilities 
+    """ Constructs methods that take a matrix of utilities (utilities for samples of y)
         and calculate an approximation to the utility-dependent term.
         In practice, the methods aggregate multiple utilities into single value.
     """
 
     def create(self, UTILITY_AGGREGATOR):
-        """ Returns the requested approximation to the utility-dependent term."""
+        """ Returns the requested approximation to the utility-dependent term.
+            Args:
+               UTILITY_AGGREGATOR: Selects an approximation to the utility-dependent term: 'vi'/'naive'/'jensen'/'linearized'.
+        """
 
         def utility_term_naive(us, data_mask):
             """
                 Args:
-                    UTILITY_AGGREGATOR: Selects an approximation to the utility-dependent term: 'vi'/'naive'/'jensen'/'linearized'.
                     us: Utility matrix where dim 0 is over output samples y, 
                         dim 1 is over latent variables theta and remaining dims are over input.
                     data_mask: A mask over input values that selects which data points should be included.
