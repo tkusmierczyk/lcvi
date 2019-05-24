@@ -114,7 +114,7 @@ class Measures:
         print2("[Evaluation:optimal_h_for_gain] h=%s" % str(h)[:200])   
         return h
 
-    @cache_function_last_result
+
     def optimal_h_for_risk(self, ys):
         if self.RISK_OPTIMAL_H_NUMERICALLY: 
             print2("[Evaluation] Numerically optimizing h for qRisk. May take time...")
