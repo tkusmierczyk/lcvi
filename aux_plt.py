@@ -10,6 +10,8 @@ import seaborn as sns; sns.set(); sns.set(font_scale=1.0); sns.set_style("white"
 import matplotlib as mpl
 from matplotlib import pyplot as plt
 
+import numpy as np
+
 
 GREEN = "limegreen"
 BLUE = "dodgerblue"
@@ -51,13 +53,18 @@ def _reset_mpl_config(font_size = 17, cmbright=True):
     ] + ([r'\usepackage{cmbright}'] if cmbright else [])
 
     
-def _create_fig(bottom=0.2, left=0.125):
+def _create_fig(bottom=0.2, left=0.125, right=0.95, top=0.95):
     fig = plt.figure(figsize=(6.4, 4.8), dpi=72)
-    fig.subplots_adjust(bottom=bottom, left=left) 
+    fig.subplots_adjust(bottom=bottom, left=left, right=right, top=top) 
     
     
-def start_plotting(cmbright=True, bottom=0.2, left=0.125, font_size=17):
+def start_plotting(cmbright=True, bottom=0.2, left=0.125, right=0.95, top=0.95, font_size=17*1.5):
     _reset_mpl_config(cmbright=cmbright, font_size=font_size)
-    _create_fig(bottom=bottom, left=left)
+    _create_fig(bottom=bottom, left=left, right=right, top=top)
     
-     
+
+def running_mean(x, N=3):
+    l = N//2    
+    return [np.mean(x[max(i-l,0): min(i+l+1, len(x))]) for i in range(len(x))]
+
+
