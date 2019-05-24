@@ -1,6 +1,6 @@
 Code necessary to reproduce results from the following paper:
 
-**T. Kuśmierczyk, J. Sakaya, A. Klami: Variational Bayesian Decision-making for Continuous Utilities.** 
+**T. Kuśmierczyk, J. Sakaya, A. Klami: Variational Bayesian Decision-making for Continuous Utilities.** [(see the preprint)](https://arxiv.org/pdf/1902.00792.pdf)
 
 -----------------------------------------------------------------------------------------------------------------
 
