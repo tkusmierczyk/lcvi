@@ -1,8 +1,13 @@
-Code necessary to reproduce results from the following paper:
+# Variational Bayesian Decision-making for Continuous Utilities
+
+-----------------------------------------------------------------------------------------------------------------
+
+### Publication
+
+The code was used in and allows to reproduce results from the following paper:
 
 **T. Kuśmierczyk, J. Sakaya, A. Klami: Variational Bayesian Decision-making for Continuous Utilities.** [(see the preprint)](https://arxiv.org/pdf/1902.00792.pdf)
 
------------------------------------------------------------------------------------------------------------------
 
 ### Abstract
 
@@ -10,17 +15,17 @@ Bayesian decision theory outlines a rigorous framework for making optimal decisi
 
 
 ### Main files 
- - eight_schools.ipynb - Jupter Notebook illustrating VI, LCVI and LCVI-EM on The Eight Schools model.
- - matrix_factorization.ipynb - Jupter Notebook illustrating VI/LCVI/LCVI-EM on Matrix Factorization model with Last.fm data.
+ - [eight_schools.ipynb](eight_schools.ipynb) - Jupter Notebook illustrating VI, LCVI and LCVI-EM on The Eight Schools model.
+ - [matrix_factorization.ipynb](matrix_factorization.ipynb) - Jupter Notebook illustrating VI/LCVI/LCVI-EM on Matrix Factorization model with Last.fm data.
 
 
 ### Additional files 
  
- - evaluation.py - Calculation of empirical risks and gains
- - losses.py - Python code allowing to calculate losses and utilities 
- - optimal_decisions.py - Code to optimize w.r.t. decisions, both in closed-forms and numerically (M-step).
- - numerical_optimization.py - Numerical optimization of decisions 
- - utility_term_estimation.py - Python code allowing to construct various approximations of the utility-dependent term.
+ - [evaluation.py](evaluation.py) - Calculation of empirical risks and gains
+ - [losses.py](losses.py) - Python code allowing to calculate losses and utilities 
+ - [optimal_decisions.py](optimal_decisions.py) - Code to optimize w.r.t. decisions, both in closed-forms and numerically (M-step).
+ - [numerical_optimization.py](numerical_optimization.py) - Numerical optimization of decisions 
+ - [utility_term_estimation.py](utility_term_estimation.py) - Python code allowing to construct various approximations of the utility-dependent term.
  - aux.py / aux_time.py / aux_plt.py - Auxiliary functions for printing, plotting, measuring time and handling PyTorch tensors.
 
 
