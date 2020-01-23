@@ -6,7 +6,7 @@
 
 The code was used in and allows to reproduce results from the following paper:
 
-**T. Kuśmierczyk, J. Sakaya, A. Klami: Variational Bayesian Decision-making for Continuous Utilities.** [(see the preprint)](https://arxiv.org/pdf/1902.00792.pdf)
+**T. Kuśmierczyk, J. Sakaya, A. Klami: Variational Bayesian Decision-making for Continuous Utilities.** NeurIPS 2019. [(arXiv preprint)](https://arxiv.org/pdf/1902.00792.pdf) [(poster)](poster.pdf)
 
 
 ### Abstract
